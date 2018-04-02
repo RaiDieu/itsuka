@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 var prefix = (".")
-bot.login("NDMwMDYwMDI4MzM1MDk1ODA4.DaKt7A.NfJQrUCs9jERO_Kifrliu7xkYCw");
+bot.login(process.env.TOKEN);
 
 bot.on('ready', function() {
     bot.user.setGame(".help");
